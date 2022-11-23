@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+    </style>
     <title>HTML&CSS assignment</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
@@ -35,42 +38,64 @@
 
     <main>
         <section class="hero">
-            <div class="container">
-                <h1>Come with friends to watch a movie</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptas neque quia vero libero non consequatur corrupti
-                    exercitationem in nulla.</p>
-                <img src="./img/movie-pop-corn.jpeg" alt="Pop-corn in the shop at the movie theahter" width="500px">
+            <div class="container hero-container">
+                <div class="hero-text-wrap">
+                    <h1 class="hero-heading">Get your friends to watch a movie</h1>
+                    <p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptas neque quia vero libero non consequatur corrupti
+                        exercitationem in nulla.</p>
+                    <button type="button" class="hero-button">Sign up</button>
+                </div>
+                <div class="hero-image-thumb">
+                    <img class="hero-image"
+                    src="./img/movie-pop-corn.jpeg" 
+                    alt="Pop-corn in the shop at the movie theahter" 
+                    >
+                </div>
             </div>
         </section>
 
-        <section>
-            <h2>Upcoming movies</h2>
-            <ul>
-                <li>
-                    <img src="./img/poster-the fabelmans.jpg" 
-                    alt="The poster of the movie The fabelmans where man walking toward the huge movie films with differnet csenes" 
-                    width="120px">
-                    <p>The fabelmans (2022)</p>
+        <section class="coming-movies">
+           <div class="container">
+            <h2 class="coming-movies-heading">Upcoming movies</h2>
+            <ul class="coming-movies-list">
+                <li class="coming-movies-item">
+                    <div class="coming-movies-poster_thumb">
+                        <img class="coming-movies-poster_image" 
+                            src="./img/poster-the fabelmans.jpg"
+                            alt="The poster of the movie The fabelmans where man walking toward the huge movie films with differnet csenes"
+                            width="120px">
+                    </div>
+                    <p class="coming-movies-poster_text">The fabelmans (2022)</p>
                 </li>
-                <li>
-                    <img src="./img/poster-bones-and-all.jpg"
-                    alt="Poster of the movie Bones and all where man and women looking at each other and touching their heads, afterall making shape of the heart"
-                    width="120px">
-                    <p>Bones and all (2022)</p>
+                <li class="coming-movies-item">
+                    <div class="coming-movies-poster_thumb">
+                        <img class="coming-movies-poster_image" 
+                            src="./img/poster-bones-and-all.jpg"
+                            alt="Poster of the movie Bones and all where man and women looking at each other and touching their heads, afterall making shape of the heart"
+                            width="120px">
+                    </div>
+                    <p class="coming-movies-poster_text">Bones and all (2022)</p>
                 </li>
-                <li>
-                    <img src="./img/poster-strange-world.jpeg"
-                    alt="Poster of the cartoon Strange world where group of people looking on the alian world wich is strange"
-                    width="120px">
-                    <p>Stange world (2022)</p>
+                <li class="coming-movies-item">
+                    <div class="coming-movies-poster_thumb">
+                        <img class="coming-movies-poster_image" 
+                            src="./img/poster-strange-world.jpeg"
+                            alt="Poster of the cartoon Strange world where group of people looking on the alian world wich is strange"
+                            width="120px">
+                    </div>
+                    <p class="coming-movies-poster_text">Stange world (2022)</p>
                 </li>
-                <li>
-                    <img src="./img/poster-devoation.jpg"
+                <li class="coming-movies-item">
+                    <div class="coming-movies-poster_thumb">
+                        <img class="coming-movies-poster_image" 
+                        src="./img/poster-devoation.jpg" 
                         alt="Poster of the movie Devoation where two men and airplane with propeller"
                         width="120px">
-                    <p>Devoation (2022)</p>
+                    </div>
+                    <p class="coming-movies-poster_text">Devoation (2022)</p>
                 </li>
             </ul>
+           </div>
         </section>
 
         <section>

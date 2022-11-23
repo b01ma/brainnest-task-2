@@ -1,11 +1,11 @@
 body {
     background-color: #ffffff;
-    color: #757575;
+    color: #F9FAF8;
     list-style: none;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 18px;
+    line-height: 1.24;
     letter-spacing: 0.03em;
     display: block;
 }
@@ -29,7 +29,7 @@ ul {
 }
 
 a:hover, a:focus {
-    color: #2196f3;
+    color: #3882F6;
 } 
 
 .link {
@@ -51,8 +51,6 @@ a:hover, a:focus {
     
     background-color: #1F2937;
     color: #F9FAF8;
-
-    outline: 1px solid red;
 }
 
 .header-container {
@@ -68,6 +66,7 @@ a:hover, a:focus {
 }
 
 .nav-link {
+    padding: 25px 0;
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -76,10 +75,12 @@ a:hover, a:focus {
     font-size: 24px;
     font-weight: 900;
     color: #F9FAF8;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-second-word {
-    color: #2196f3;
+    color: #3882F6;
 }
 
 .nav-list {
@@ -95,5 +96,113 @@ a:hover, a:focus {
 
 .hero {
     background-color: #1F2937;
-    color: #F9FAF8;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text-wrap {
+    width: 50%;
+}
+
+.hero-heading {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.18;
+
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    color: #E5E7EB;
+
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    color: #ffffff;
+        background-color: #3882F6;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.85;
+        text-align: center;
+        letter-spacing: 0.06em;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 7px;
+        border: none;
+        padding: 3px 27px;
+}
+
+.hero-image-thumb {
+    height: 256px;
+    width: 450px;
+}
+
+.hero-image-thumb > img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* !Coming Movies */
+
+.coming-movies {
+    margin-top: 50px;
+}
+
+.coming-movies-heading {
+    text-align: center;
+    color: #1F2937;
+
+    margin-bottom: 40px;
+}
+
+.coming-movies-list {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.coming-movies-item:not(:last-child) {
+margin-right: 70px;
+}
+
+.coming-movies-item {
+   width: 180px; 
+}
+
+.coming-movies-poster_thumb {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    height: 200px;
+    width: 150px;
+    border-radius: 5px;
+
+    
+}
+
+.coming-movies-poster_image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+
+}
+
+.coming-movies-poster_text {
+    color: #1F2937;
+    font-size: 18px;
+
+    text-align: center;
+}
+
+
