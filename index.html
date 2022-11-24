@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="top-page">
        <div class="container header-container">
-        <div class="header-logo">
-            <a href="./index.html" class="link nav-logo">
+        <div class="logo-container">
+            <a href="./index.html" class="link logo">
                 <!-- <object data="./svg/logo-film.svg" width="100" height="25"></object> -->
                 Movie <span class="logo-second-word">Barn</span>
             </a>
@@ -43,7 +43,11 @@
                     <h1 class="hero-heading">Get your friends to watch a movie</h1>
                     <p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptas neque quia vero libero non consequatur corrupti
                         exercitationem in nulla.</p>
-                    <button type="button" class="hero-button">Sign up</button>
+                    <button 
+                    class="button hero-button" 
+                    type="button">
+                    Book now
+                    </button>
                 </div>
                 <div class="hero-image-thumb">
                     <img class="hero-image"
@@ -98,29 +102,53 @@
            </div>
         </section>
 
-        <section>
-            <h2>Quate that makes you thing about moive</h2>
-            <p>Fasten your seatbelts. It's going to be a bumpy night.</p>
-            <p>All about Eve (1950)</p>
+        <section class="quote">
+            <div class="container quote-container">
+                <h2 class="quote-heading visually-hidden">Quate that makes you thing about moive</h2>
+                <p class="quote-text">
+                    “We love films because they makes us feel something. They speak to our desires, which are never small. They allow us
+                    to escape and to dream and to gaze into the eyes that are impossibly beautiful and huge. They fill us with longing. But
+                    also. They tell us to remember; they remind us of life. Remember, they say, how much it hurts to have your heart
+                    broken.”
+                </p>
+                <p class="quote-text-author">
+                    ― Nina LaCour, Everything Leads to You
+                </p>
+            </div>
         </section>
 
-        <section>
-            <h3>Call now to book a ticket</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, asperiores?</p>
-            <button type="button">Book now</button>
+        <section class="call-to-action">
+            <div class="container call-to-action-wrapping">
+                    <div class="call-to-action-text-container">
+                        <h3 class="call-to-action-heading">Book a ticket now!</h3>
+                        <p>You can book a ticket to any movie playing now by clicking the button here</p>
+                    </div>
+                    <button class=" button call-to-action-button" type="button">Book now</button>
+            </div>
         </section>
 
-        <footer>
-            <a href="./index.html">
-                <object data="./svg/logo-film.svg" width="100" height="25"></object>
-                Movie Barn
-            </a>
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-logo-container">
+                    <a href="./index.html" class="link logo footer-logo">
+                    <!-- <object data="./svg/logo-film.svg" width="100" height="25"></object> -->
+                    Movie <span class="logo-second-word">Barn</span>
+                    </a>
+                </div>
 
-            <a href="">Contact us</a>
-            <address>
-                Best street 123, IL, Chicago
-                United States
-            </address>
+                <div class="up-button-container">
+                    <a href="#top-page">
+                        <button class="button up-button" type="buttons">
+                            Go up
+                        </button>
+                    </a>
+                    
+                </div>
+            
+                <address>
+                Queen's Palace, 101 Lalana Ramboatiana, Antananarivo, Madagascar
+                </address>
+            </div>
         </footer>
     </main>
 </body>

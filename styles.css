@@ -28,6 +28,22 @@ ul {
     padding-left: 0;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.button {
+    cursor: pointer;
+    font-family: 'Roboto', san-serif;
+}
+
 a:hover, a:focus {
     color: #3882F6;
 } 
@@ -61,17 +77,13 @@ a:hover, a:focus {
     height: 100%;
 }
 
-.header-logo {
-
-}
-
 .nav-link {
     padding: 25px 0;
     font-size: 18px;
     color: #E5E7EB;
 }
 
-.nav-logo {
+.logo {
     font-size: 24px;
     font-weight: 900;
     color: #F9FAF8;
@@ -126,17 +138,17 @@ a:hover, a:focus {
 
 .hero-button {
     color: #ffffff;
-        background-color: #3882F6;
-        cursor: pointer;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.85;
-        text-align: center;
-        letter-spacing: 0.06em;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 7px;
-        border: none;
-        padding: 3px 27px;
+    background-color: #3882F6;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.85;
+    text-align: center;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 7px;
+    border: none;
+    padding: 3px 27px;
 }
 
 .hero-image-thumb {
@@ -154,14 +166,15 @@ a:hover, a:focus {
 /* !Coming Movies */
 
 .coming-movies {
-    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .coming-movies-heading {
     text-align: center;
     color: #1F2937;
 
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .coming-movies-list {
@@ -205,4 +218,97 @@ margin-right: 70px;
     text-align: center;
 }
 
+/* !Quote */
+.quote {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #1F2937;
+    background-color: #E5E7EB;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.quote-text {
+    padding: 0 50px;
+    text-align:justify;
+    line-height: 1.60;
+}
+
+.quote-text-author {
+    font-weight: 700;
+    text-align: end;
+}
+
+/* !Booking */
+
+.call-to-action {
+    padding: 100px 0;
+}
+
+.call-to-action-wrapping {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882F6;
+    padding: 50px;
+
+    width: 600px;
+    border-radius: 10px;
+}
+
+.call-to-action-text-container {
+    width: 500px;
+}
+
+.call-to-action-heading {
+    margin-bottom: 10px;
+}
+
+.call-to-action-button {
+   
+    background-color: #3882F6;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+    padding: 10px 25px;
+    min-width: 140px;
+}
+
+/* !Footer */
+
+.footer {
+    background-color: #1F2937 ;
+
+    padding: 25px 0;
+}
+
+.footer-logo {
+    margin-bottom: 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.up-button {
+    background-color: #1F2937;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    min-width: 100px;
+    padding: 5px 20px;
+        
+}
 
