@@ -44,6 +44,10 @@ ul {
     font-family: 'Roboto', san-serif;
 }
 
+#current {
+    color: #3882F6
+}
+
 a:hover, a:focus {
     color: #3882F6;
 } 
@@ -54,10 +58,26 @@ a:hover, a:focus {
 }
 
 .container {
-    max-width: 1024px;
+    max-width: 1200px;
     padding: 0 15px;
     margin-right: auto;
     margin-left: auto;
+    box-sizing: border-box;
+}
+
+.primary-button {
+    color: #ffffff;
+    background-color: #3882F6;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.85;
+    text-align: center;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 7px;
+    border: none;
+    padding: 3px 27px;
 }
 
 /* !Header */
@@ -136,20 +156,7 @@ a:hover, a:focus {
     margin-bottom: 20px;
 }
 
-.hero-button {
-    color: #ffffff;
-    background-color: #3882F6;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.85;
-    text-align: center;
-    letter-spacing: 0.06em;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 7px;
-    border: none;
-    padding: 3px 27px;
-}
+
 
 .hero-image-thumb {
     height: 256px;
@@ -167,7 +174,7 @@ a:hover, a:focus {
 
 .coming-movies {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .coming-movies-heading {
@@ -220,24 +227,32 @@ margin-right: 70px;
 
 /* !Quote */
 .quote {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    
     color: #1F2937;
-    background-color: #E5E7EB;
+
     font-size: 36px;
     font-style: italic;
     font-weight: 400;
 }
 
+.quote-container {
+    background-color: #E5E7EB;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .quote-text {
-    padding: 0 50px;
-    text-align:justify;
-    line-height: 1.60;
+    text-align: justify;
+    line-height: 1.30;
+
+    padding: 0 100px;
+    margin-bottom: 20px;
 }
 
 .quote-text-author {
     font-weight: 700;
     text-align: end;
+    padding-right: 20px;
 }
 
 /* !Booking */
@@ -312,3 +327,70 @@ margin-right: 70px;
         
 }
 
+/* !Trending */
+
+.trending {
+    color: #1F2937;
+}
+
+.trending-heading {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.trending-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-right: -15px;
+
+    padding-bottom: 30px;;
+}
+
+.trending-item {
+    display: flex;
+    width: 380px;
+
+    background-color: #E5E7EB;
+
+    padding: 15px 15px ;
+    box-sizing: border-box;
+
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.trending-item-heading {
+    font-size: 18px;
+    font-weight: 700;
+
+}
+  
+.trending-item-image-thumb {
+    margin-right: 15px;
+
+    margin-bottom: 15px;
+    width: 150px;
+    height: 200px;
+}
+
+.trending-item-image {
+    display: block;
+    /* width: 150px;
+    height: 200px; */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.trending-item-text {
+    font-size: 16px;
+}
+
+.trending-item-quote {
+    margin-top: 10px;
+}

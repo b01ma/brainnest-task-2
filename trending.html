@@ -4,113 +4,251 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trending Now</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+    </style>
+    <title>Trending now</title>
+    <link rel="stylesheet" href="./styles.css">
+    
 </head>
 <body>
-    <header>
-        <a href="./index.html">
-            <object data="./svg/logo-film.svg" width="100" height="25"></object>
-            Movie Barn
-        </a>
-    
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./trending.html">Trending Now</a>
-                </li>
-                <li>
-                    <a href="./contacts.html">Contacts</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="header" id="top-page">
+        <div class="container header-container">
+            <div class="logo-container">
+                <a href="./index.html" class="link logo">
+                    <!-- <object data="./svg/logo-film.svg" width="100" height="25"></object> -->
+                    Movie <span class="logo-second-word">Barn</span>
+                </a>
+            </div>
 
-        <main>
-            <h1>Trending Movies</h1>
-            <ul>
-                <li>
-                    <div>
-                        <img src="./img/trending-shawshank-redemption.jpeg" alt="" width="100px" height="150px">
-                        <p>The Shawshenk Redemption (1994)</p>
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="./index.html" class="link nav-link">Home</a>
+                    </li>
+                    <li class="nav-list-item" >
+                        <a href="./trending.html" class="link nav-link" id="current">Trending Now</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="./contacts.html" class="link nav-link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+       <section class="trending ">
+        <h1 class="trending-heading">Trending Movies</h1>
+        <ul class="trending-list">
+
+            <li class="trending-item">
+                <div>
+                    <div class="trending-item-image-thumb">
+                        <img class="trending-item-image" src="./img/trending-shawshank-redemption.jpeg" alt="">
                     </div>
-                    <p>
-                        “I think a man working outdoors feels more like a man if he can have a bottle of suds. That’s only my opinion.” - Andy Dufresne
+                    <button class="button primary-button" type="button">
+                        Book a seat
+                    </button>
+                </div>
+                   
+                <div class="trending-item-text">
+                    <h2 class="trending-item-heading">The Shawshenk Redemption</h2>
+                    <p>Year: 1994</p>
+                    <p>Raiting IMDb: 9.2/10</p>
+                    <p class="trending-item-quote">
+                        “I think a man working outdoors feels more like a man if he can have a bottle of suds. That’s only my
+                        opinion.” - Andy Dufresne
                     </p>
-                </li>
-                <li>
-                    <div>
-                        <img src="./img/trending-the-godfather.jpeg" alt="" width="100px" height="150px">
-                        <p>The GodFather (1972)</p>
+                </div>
+            </li>
+
+            <li class="trending-item">
+                <div>
+                    <div class="trending-item-image-thumb">
+                        <img class="trending-item-image" src="./img/trending-the-godfather.jpeg" alt="">
                     </div>
-                    <p>“Women and children can be careless, but not men." - Don Carleone
+                    <button class="button primary-button" type="button">
+                        Book a seat
+                    </button>
+                </div>
+
+                <div class="trending-item-text">
+                    <h2 class="trending-item-heading">The GodFather</h2>
+                    <p>Year: 1972</p>
+                    <p>Raiting IMDb: 9.2/10</p>
+                    <p class="trending-item-quote">
+                        “Women and children can be careless, but not men." - Don Carleone
                     </p>
-                </li>
-                <li>
-                    <div>
-                        <img src="./img/trending-the-dark-knight.jpg" alt="" width="100px" height="150px">
-                        <p>The Dark Knight</p>
+                
+                </div>
+            </li>
+
+            <li class="trending-item">
+                <div>
+                    <div class="trending-item-image-thumb">
+                        <img class="trending-item-image" src="./img/trending-the-dark-knight.jpg" alt="">
                     </div>
-                    <p>
+                    <button class="button primary-button" type="button">
+                        Book a seat
+                    </button>
+                </div>
+
+                <div class="trending-item-text">
+                    <h2 class="trending-item-heading">The Dark Knight</h2>
+                    <p>Year: 2008</p>
+                    <p>Raiting: 9.0/10</p>
+                    <p class="trending-item-quote">
                         "You Always Fear What You Don't Understand." - Carmine Falcone
                     </p>
-                </li>
-                <li>
-                    <div>
-                        <img src="./img/trending-12-angry-men.jpeg" alt="" width="100px" height="150px">
-                        <p>12 Angry Men (1957)</p>
+                </div>
+            </li>
+
+            <li class="trending-item">
+                <div>
+                    <div class="trending-item-image-thumb">
+                        <img class="trending-item-image" src="./img/trending-12-angry-men.jpeg" alt="">
                     </div>
-                    <p>
+                    <button class="button primary-button" type="button">
+                        Book a seat
+                    </button>
+                </div>
+
+                <div class="trending-item-text">
+                    <h2 class="trending-item-heading">12 Angry Men</h2>
+                    <p>Year: 1957</p>
+                    <p>Raiting: 9.0/10</p>
+                    <p class="trending-item-quote">
                         “It takes a great deal of courage to stand alone even if you believe in something very strongly.”
-                        ― Reginald Rose,
+                        ― Reginald Rose
                     </p>
-                </li>
-                <li>
-                    <div>
-                        <img src="./img/trending-schindlers-list.jpeg" alt="" width="100px" height="150px">
-                        <p>Schindler's List (1993)</p>
+                </div>
+            </li>
+
+            <li class="trending-item">
+                <div>
+                    <div class="trending-item-image-thumb">
+                        <img class="trending-item-image" src="./img/trending-schindlers-list.jpeg" alt="">
                     </div>
-                    <p>
+                    <button class="button primary-button" type="button">
+                        Book a seat
+                    </button>
+                </div>
+                
+                <div class="trending-item-text">
+                    <h2 class="trending-item-heading">Schindler's List</h2>
+                    <p>Year: 1993 </p>
+                    <p>Raiting: 8.9/10</p>
+                    <p class="trending-item-quote">
                         “Power is when we have every justification to kill, and we don’t.” — Oskar Schindler
                     </p>
-                </li>
-                <li>
-                    <div>
-                        <img src="./img/trending-lord-of-the-rings.jpeg" alt="" width="100px" height="150px">
-                        <p>The Lord of the Rings: The Return of the King (2003)</p>
+                </div>
+            </li>
+
+            <li class="trending-item">
+                <div>
+                    <div class="trending-item-image-thumb">
+                        <img class="trending-item-image" src="./img/trending-lord-of-the-rings.jpeg" alt="">
                     </div>
-                    <p>
+                    <button class="button primary-button" type="button">
+                        Book a seat
+                    </button>
+                </div>
+
+               <div class="trending-item-text">
+                    <h2 class="trending-item-heading">The Lord of the Rings: The Return of the King</h2>
+                    <p>Year: 2003</p>
+                    <p>Raiting: 9.0/10</p>
+                    <p class="trending-item-quote">
                         “CERTAINTY OF DEATH. SMALL CHANCE OF SUCCESS. WHAT ARE WE WAITING FOR?” - Gimli
                     </p>
-                </li>
-                <li>
-                    <div>
-                        <img src="./img/trending-pulp-fiction.jpeg" alt="" width="100px" height="150px">
-                        <p>Pulp Fiction (1994)</p>
+               </div>
+            </li>
+
+            <li class="trending-item">
+                <div>
+                    <div class="trending-item-image-thumb">
+                        <img class="trending-item-image" src="./img/trending-pulp-fiction.jpeg" alt="">
                     </div>
-                    <p>
+                    <button class="button primary-button" type="button">
+                        Book a seat
+                    </button>
+                </div>
+
+                <div class="trending-item-text">
+                    <h2 class="trending-item-heading">Pulp Fiction</h2>
+                    <p>Year: 1994 </p>
+                    <p>Raiting: 8.8/10</p>
+                    <p class="trending-item-quote">
                         “Hamburgers! The cornerstone of any nutritious breakfast.” — Jules
                     </p>
-                </li>
-                <li>
-                    <div>
-                        <img src="./img/trending-the-good-bad-ugly.jpeg" alt="" width="100px" height="150px">
-                        <p>The Good, the Bad and the Ugly (1966)</p>
+                </div>
+            </li>
+            <li class="trending-item">
+                <div>
+                    <div class="trending-item-image-thumb">
+                        <img class="trending-item-image" src="./img/trending-the-good-bad-ugly.jpeg" alt="">
                     </div>
-                    <p>
+                    <button class="button primary-button" type="button">
+                        Book a seat
+                    </button>
+                </div>
+
+                <div class="trending-item-text">
+                    <h2 class="trending-item-heading">The Good, the Bad and the Ugly</h2>
+                    <p>Year: 1966</p>
+                    <p>Raiting: 9.0/10</p>
+                    <p class="trending-item-quote">
                         "When You Have To Shoot, Shoot. Don't Talk." - Tuco
                     </p>
-                </li>
-                <li>
-                    <div>
-                        <img src="./img/trending-forest-gump.jpeg" alt="" width="100px" height="150px">
-                        <p>Forrest Gump (1994)</p>
+                </div>
+                
+            </li>
+            <li class="trending-item">
+                <div>
+                    <div class="trending-item-image-thumb">
+                        <img class="trending-item-image" src="./img/trending-forest-gump.jpeg" alt="">
                     </div>
-                    <p>"You have to do the best with what God gave you." - Mrs. Gump
+                    <button class="button primary-button" type="button">
+                        Book a seat
+                    </button>
+                </div>
+
+                <div class="trending-item-text">
+                    <h2 class="trending-item-heading">Forrest Gump</h2>
+                    <p>Year: 1994</p>
+                    <p>Raiting: 9.0/10</p>
+                    <p class="trending-item-quote">
+                        "You have to do the best with what God gave you." - Mrs. Gump
                     </p>
-                </li>
-            </ul>
-        </main>
+                </div>
+            </li>
+        </ul>
+       </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo-container">
+                <a href="./index.html" class="link logo footer-logo">
+                    <!-- <object data="./svg/logo-film.svg" width="100" height="25"></object> -->
+                    Movie <span class="logo-second-word">Barn</span>
+                </a>
+            </div>
+    
+            <div class="up-button-container">
+                <a href="#top-page">
+                    <button class="button up-button" type="buttons">
+                        Go up
+                    </button>
+                </a>
+    
+            </div>
+    
+            <address>
+                Queen's Palace, 101 Lalana Ramboatiana, Antananarivo, Madagascar
+            </address>
+        </div>
+    </footer>
 </body>
 </html>
