@@ -8,6 +8,7 @@ body {
     line-height: 1.24;
     letter-spacing: 0.03em;
     display: block;
+    margin: 0;
 }
 
 p,
@@ -78,6 +79,17 @@ a:hover, a:focus {
     border-radius: 7px;
     border: none;
     padding: 3px 27px;
+}
+
+.outer-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer {
+    margin-top: auto;
 }
 
 /* !Header */
@@ -204,9 +216,7 @@ margin-right: 70px;
     margin-bottom: 15px;
     height: 200px;
     width: 150px;
-    border-radius: 5px;
-
-    
+    border-radius: 5px;  
 }
 
 .coming-movies-poster_image {
@@ -215,7 +225,6 @@ margin-right: 70px;
     width: 100%;
     object-fit: cover;
     border-radius: 7px;
-
 }
 
 .coming-movies-poster_text {
@@ -227,7 +236,6 @@ margin-right: 70px;
 
 /* !Quote */
 .quote {
-    
     color: #1F2937;
 
     font-size: 36px;
@@ -281,7 +289,6 @@ margin-right: 70px;
 }
 
 .call-to-action-button {
-   
     background-color: #3882F6;
     border: 2px solid #ffffff;
     border-radius: 5px;
@@ -323,8 +330,7 @@ margin-right: 70px;
     font-size: 12px;
     font-weight: 500;
     min-width: 100px;
-    padding: 5px 20px;
-        
+    padding: 5px 20px;     
 }
 
 /* !Trending */
@@ -345,6 +351,7 @@ margin-right: 70px;
 .trending-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 15px;
 
     margin-right: -15px;
 
@@ -353,35 +360,29 @@ margin-right: 70px;
 
 .trending-item {
     display: flex;
-    width: 380px;
+    flex-basis: calc((100% - 30px) / 3);
 
     background-color: #E5E7EB;
 
     padding: 15px 15px ;
-    box-sizing: border-box;
-
-    margin-right: 15px;
-    margin-bottom: 15px;
+    box-sizing: border-box;    
 }
 
 .trending-item-heading {
     font-size: 18px;
     font-weight: 700;
-
 }
   
 .trending-item-image-thumb {
     margin-right: 15px;
-
     margin-bottom: 15px;
+
     width: 150px;
     height: 200px;
 }
 
 .trending-item-image {
     display: block;
-    /* width: 150px;
-    height: 200px; */
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
@@ -393,4 +394,105 @@ margin-right: 70px;
 
 .trending-item-quote {
     margin-top: 10px;
+}
+
+/* !Contacts */
+
+.contacts {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    color: #1F2937;
+}
+
+.contacts-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.contacts-address {
+    margin-bottom: 30px;
+}
+
+.contacts-map-heading {
+    text-align: center;
+    font-size: 24px;
+
+    margin-bottom: 30px;
+}
+
+.contacts-image-thumb {
+    height: 500px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contacts-map-image {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+.contact-form-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    font-family: inherit;
+    font-size: 18px;
+}
+
+.contacts-input {
+    padding: 10px;
+    margin-top: 10px;
+
+    font-family: inherit;
+    font-size: 18px;
+
+    border: 1px solid #1F2937;
+    border-radius: 5px;
+}
+
+.contact-form-massage {
+    resize: none;
+    height: 100%;
+    padding: 15px;
+    
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    font-family: inherit;
+    font-size: 18px;
+
+    border: 1px solid #1F2937;
+    border-radius: 5px;
+}
+
+.contact-form-button {
+    width: 150px;
 }

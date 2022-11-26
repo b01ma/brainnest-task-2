@@ -4,35 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+    </style>
     <title>Contacts</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header>
-        <a href="./index.html">
-            <object data="./svg/logo-film.svg" width="100" height="25"></object>
-            Movie Barn
-        </a>
+   <div class="outer-container">
+    <header class="header" id="top-page">
+        <div class="container header-container">
+            <div class="logo-container">
+                <a href="./index.html" class="link logo">
+                    <!-- <object data="./svg/logo-film.svg" width="100" height="25"></object> -->
+                    Movie <span class="logo-second-word">Barn</span>
+                </a>
+            </div>
     
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./trending.html">Trending Now</a>
-                </li>
-                <li>
-                    <a href="./contacts.html">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="./index.html" class="link nav-link">Home</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="./trending.html" class="link nav-link" >Trending Now</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="./contacts.html" class="link nav-link" id="current">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
         <main>
-            <section>
-                <h1>Contacts</h1>
-                <p>Our address is Queen's Palace, 101 Lalana Ramboatiana, Antananarivo, Madagascar</p>
-                <img src="./img/contact-map.png" alt="" width="300px">
+            <section class="contacts flex-container container">
+                <div class="flex-item flex-">
+                    <h1 class="contacts-heading">Contacts</h1>
+                    <p class="contacts-address">Our address is Queen's Palace, 101 Lalana Ramboatiana, Antananarivo, Madagascar</p>
+                    <p class="contact-form-heading">Contact us</p>
+                    <form class="contact-form">
+                        <label for="email">Email
+                            <input class="contacts-input" type="email" id="email" placeholder="Enter your email">
+                        </label>
+
+                        <label for="name">Name
+                            <input class="contacts-input" type="text" id="name" placeholder="Enter your name">
+                        </label>
+
+                        <label for="massage">Message
+                            <textarea  class="contact-form-massage" name="massage" id="massage" rows="12" placeholder="Enter your massage"></textarea>
+                        </label>
+
+                        <button class="primary-button contact-form-button" type="submit">Send</button>
+
+                    </form>
+                </div>
+                <div class="flex-item">
+                    <h2 class="contacts-map-heading">Find us on the map</h2>
+                    <div class="contacts-image-thumb">
+                        <a href="https://www.google.com/maps/place/Queen's+Palace/@-18.9237346,47.5299054,17z/data=!3m1!4b1!4m5!3m4!1s0x21f07de0aec88445:0x9075bee78187fd2b!8m2!3d-18.9236681!4d47.5319416" target="_blank">
+                            <img class="contacts-map-image" src="./img/contact-map.png" alt="" width="300px">
+                            </div>
+                        </a>
+                </div>
             </section>
         </main>
+    
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo-container">
+                <a href="./index.html" class="link logo footer-logo">
+                    <!-- <object data="./svg/logo-film.svg" width="100" height="25"></object> -->
+                    Movie <span class="logo-second-word">Barn</span>
+                </a>
+            </div>
+    
+            <address>
+                Queen's Palace, 101 Lalana Ramboatiana, Antananarivo, Madagascar
+            </address>
+        </div>
+    </footer>
+   </div>
 </body>
 </html>
