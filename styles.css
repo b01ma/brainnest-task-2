@@ -208,6 +208,7 @@ margin-right: 70px;
 
 .coming-movies-item {
    width: 180px; 
+   height: 250px;
 }
 
 .coming-movies-poster_thumb {
@@ -217,6 +218,8 @@ margin-right: 70px;
     height: 200px;
     width: 150px;
     border-radius: 5px;  
+
+    margin: 0;
 }
 
 .coming-movies-poster_image {
@@ -228,6 +231,8 @@ margin-right: 70px;
 }
 
 .coming-movies-poster_text {
+
+    margin-top: 10px;
     color: #1F2937;
     font-size: 18px;
 
@@ -254,6 +259,7 @@ margin-right: 70px;
     line-height: 1.30;
 
     padding: 0 100px;
+    margin: 0;
     margin-bottom: 20px;
 }
 
